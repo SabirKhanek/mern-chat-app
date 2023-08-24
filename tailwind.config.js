@@ -2,6 +2,13 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
+const colorWithoutYellowAndBlack = {}
+Object.keys(colors).forEach(color => {
+  if (color !== 'yellow' && color !== 'black') {
+    colorWithoutYellowAndBlack[color] = colors[color]
+  }
+})
+
 export default {
   content: [
     "./index.html",
@@ -11,7 +18,7 @@ export default {
     colors: {
       black: '#040201',
       yellow: '#FCCF35',
-      ...colors
+      ...colorWithoutYellowAndBlack
     },
     screens: {
       'xs': '425px',

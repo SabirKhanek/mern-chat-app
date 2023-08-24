@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 
 export function AuthUi() {
     return (
-        <div className="w-full h-full bg-gradient-to-tl from-yellow-300 to-amber-400 backdrop-blur-sm justify-center items-center inline-flex">
+        <div className="w-full h-full bg-gradient-to-tl from-yellow to-amber-400 backdrop-blur-sm justify-center items-center inline-flex">
             <div className="basis-1/4 translate-x-1 bg-[url('/auth-cover.webp')] bg-center bg-cover h-[650px] rounded-l-lg shrink-0 grow-0 hidden lg:block">
 
             </div>

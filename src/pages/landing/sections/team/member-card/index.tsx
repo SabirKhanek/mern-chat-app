@@ -1,15 +1,18 @@
 import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export interface MemberCardProps {
-    name: string; designation: string[]; image: string; facebookLink?: string; githubLink?: string; linkedinLink?: string;
+    name: string; designation: string[]; image: string; facebookLink?: string; githubLink?: string; linkedinLink?: string; container_ref?: any
 }
 
-export default function MemberCard({ name, designation, image, facebookLink, githubLink, linkedinLink }: MemberCardProps) {
+export default function MemberCard({ name, designation, image, facebookLink, githubLink, linkedinLink, container_ref }: MemberCardProps) {
     const screenWidth = window.innerWidth;
     const cardWidth = 250;
     const marginLeft = Math.floor((screenWidth - cardWidth) / 2)
     const getMarginLeft = () => {
-        if (screenWidth <= 425) {
+        if (container_ref.current?.containerRef?.current?.clientWidth) {
+            return Math.floor((container_ref.current?.containerRef?.current?.clientWidth - cardWidth) / 2)
+        }
+        if (screenWidth <= 1000) {
             return marginLeft
         }
         else {
