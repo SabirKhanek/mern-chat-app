@@ -17,6 +17,7 @@ import {
   query,
   getDocs,
 } from "firebase/firestore";
+import { toast } from "react-toastify";
 
 interface VideosProps {
   mode: Mode;
@@ -72,6 +73,8 @@ const Videos: React.FC<VideosProps> = ({ mode, callId, setPage }) => {
       const answerCandidates = collection(callDoc, "answerCandidates");
 
       setRoomId(callDoc.id);
+
+      toast(`Meeting started with Room Id: ${callDoc.id}`);
 
       pc.onicecandidate = (event) => {
         event.candidate && addDoc(offerCandidates, event.candidate.toJSON());
@@ -190,10 +193,13 @@ const Videos: React.FC<VideosProps> = ({ mode, callId, setPage }) => {
           <div className="popover">
             <button
               onClick={() => {
-                navigator.clipboard.writeText(roomId);
+                navigator.clipboard.writeText(
+                  `${window.location.origin}/video-chat/join/${roomId}`
+                );
+                toast("Meeting link copied!");
               }}
             >
-              <img src={CopyIcon} /> Copy joining code
+              <img src={CopyIcon} /> Copy Meeting Link
             </button>
           </div>
         </div>
