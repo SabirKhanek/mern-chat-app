@@ -1,34 +1,34 @@
-import sabir from "./assets/sabir.jpg";
-import lubna from "./assets/lubna.jpeg";
+// import sabir from "./assets/sabir.jpg";
+// import lubna from "./assets/lubna.jpeg";
 import raffay from "./assets/raffay.jpg";
 import talal from "./assets/talal.jpg";
-import maria from "./assets/maria.jpg";
+// import maria from "./assets/maria.jpg";
 
 export default [
-  {
-    image: sabir,
-    name: "Muhammad Sabir Hussain",
-    designation: ["Project Lead", "Full Stack Developer"],
-    linkedinLink: "https://www.linkedin.com/in/sabir-khan-185215180/",
-    githubLink: "https://github.com/sabirkhanek",
-    facebookLink: "https://facebook.com/sabir.12321",
-  },
-  {
-    image: maria,
-    name: "Maria Khadim",
-    designation: ["UI/UX"],
-    linkedinLink: "https://www.linkedin.com/in/maria-khadim-442342220/",
-    facebookLink:
-      "https://www.facebook.com/profile.php?id=100091441680942&mibextid=YMEMSu",
-  },
-  {
-    image: lubna,
-    name: "Lubna Khizer",
-    designation: ["UI/UX"],
-    linkedinLink: "https://www.linkedin.com/in/lubna-khizar/",
-    githubLink: "https://github.com/lubnakhizar",
-    facebookLink: "https://www.linkedin.com/in/lubna-khizar/",
-  },
+  // {
+  //   image: sabir,
+  //   name: "Muhammad Sabir Hussain",
+  //   designation: ["Project Lead", "Full Stack Developer"],
+  //   linkedinLink: "https://www.linkedin.com/in/sabir-khan-185215180/",
+  //   githubLink: "https://github.com/sabirkhanek",
+  //   facebookLink: "https://facebook.com/sabir.12321",
+  // },
+  // {
+  //   image: maria,
+  //   name: "Maria Khadim",
+  //   designation: ["UI/UX"],
+  //   linkedinLink: "https://www.linkedin.com/in/maria-khadim-442342220/",
+  //   facebookLink:
+  //     "https://www.facebook.com/profile.php?id=100091441680942&mibextid=YMEMSu",
+  // },
+  // {
+  //   image: lubna,
+  //   name: "Lubna Khizer",
+  //   designation: ["UI/UX"],
+  //   linkedinLink: "https://www.linkedin.com/in/lubna-khizar/",
+  //   githubLink: "https://github.com/lubnakhizar",
+  //   facebookLink: "https://www.linkedin.com/in/lubna-khizar/",
+  // },
   {
     image: raffay,
     name: "Abdul Raffay Khan",

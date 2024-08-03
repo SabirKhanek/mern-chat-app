@@ -1,5 +1,4 @@
-import google_logo from '../../../public/google.png'
-import github_logo from '../../../public/github-logo.png'
+
 import { toast } from 'react-toastify'
 import { Link, useNavigate } from 'react-router-dom'
 import { useFormik } from 'formik'
@@ -65,11 +64,11 @@ export default function Register() {
             <div>
                 <div className='flex gap-1 md:gap-3 lg:gap-4'>
                     <div className='flex rounded-2xl border border-black items-center gap-1 p-1 basis-1/2 cursor-pointer' onClick={featureNotImplemented}>
-                        <img src={google_logo} width='33' height='33' alt="" />
+                        <img src={"/google.png"} width='33' height='33' alt="" />
                         <p>Sign up with Google</p>
                     </div>
                     <div className='flex rounded-2xl border border-black items-center gap-1 p-1 basis-1/2 cursor-pointer' onClick={featureNotImplemented}>
-                        <img src={github_logo} width='33' height='33' alt="" />
+                        <img src={"/github-logo.png"} width='33' height='33' alt="" />
                         <p>Sign up with Github</p>
                     </div>
                 </div>
