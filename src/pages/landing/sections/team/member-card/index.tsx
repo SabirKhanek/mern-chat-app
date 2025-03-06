@@ -38,12 +38,12 @@ export default function MemberCard({
   };
   return (
     <div
-      style={{ marginLeft: getMarginLeft(), width: cardWidth + "px" }}
-      className={`my-[20px] flex flex-col overflow-hidden bg-[#3f3f3f] h-[360px] rounded-md`}
+      // style={{ marginLeft: getMarginLeft(), width: cardWidth + "px" }}
+      className={`my-[20px] w-[250px] max-w-[250px] flex flex-col overflow-hidden bg-[#3f3f3f] h-[360px] rounded-md`}
     >
       <div className="relative shrink-0 grow-0 w-full h-3/5 rounded-md">
         <img
-          className="object-cover w-full h-full rounded-md"
+          className="object-cover object-center w-full h-full rounded-md"
           src={image}
           alt=""
         />

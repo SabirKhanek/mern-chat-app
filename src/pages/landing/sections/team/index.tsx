@@ -55,7 +55,7 @@ export default function TeamSection() {
                 name={member.name}
                 image={member.image}
                 designation={member.designation}
-                facebookLink={member.facebookLink}
+                // facebookLink={member.facebookLink}
                 linkedinLink={member.linkedinLink}
               ></MemberCard>
             );
