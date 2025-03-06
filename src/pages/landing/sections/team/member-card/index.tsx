@@ -17,25 +17,26 @@ export default function MemberCard({
   facebookLink,
   githubLink,
   linkedinLink,
-  container_ref,
+  // container_ref,
 }: MemberCardProps) {
-  const screenWidth = window.innerWidth;
-  const cardWidth = 250;
-  const marginLeft = Math.floor((screenWidth - cardWidth) / 2);
-  const getMarginLeft = () => {
-    if (container_ref.current?.containerRef?.current?.clientWidth) {
-      return Math.floor(
-        (container_ref.current?.containerRef?.current?.clientWidth -
-          cardWidth) /
-          2
-      );
-    }
-    if (screenWidth <= 1000) {
-      return marginLeft;
-    } else {
-      return "17%";
-    }
-  };
+  // const screenWidth = window.innerWidth;
+
+  // const cardWidth = 250;
+  // const marginLeft = Math.floor((screenWidth - cardWidth) / 2);
+  // const getMarginLeft = () => {
+  //   if (container_ref.current?.containerRef?.current?.clientWidth) {
+  //     return Math.floor(
+  //       (container_ref.current?.containerRef?.current?.clientWidth -
+  //         cardWidth) /
+  //         2
+  //     );
+  //   }
+  //   if (screenWidth <= 1000) {
+  //     return marginLeft;
+  //   } else {
+  //     return "17%";
+  //   }
+  // };
   return (
     <div
       // style={{ marginLeft: getMarginLeft(), width: cardWidth + "px" }}
