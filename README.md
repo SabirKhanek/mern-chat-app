@@ -6,3 +6,4 @@ cd mern-chat-app
 npm install
 vite --host
 ```
+ 
