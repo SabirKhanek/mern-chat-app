@@ -23,7 +23,7 @@ export default function AboutSection() {
                             About Us
                         </h3>
                         <h4 className='text-black text-xl text-center sm:text-left font-semibold mb-3'>
-                            We are a group of final year <span className='text-yellow'>Computer Science Students in GCUL</span>
+                            We are a group of final year <span className='text-yellow'>Information Technology Students at UMT Lahore</span>
                         </h4>
                         <p className='text-center sm:text-left'>
                             We sensed the need of this platform seeing our fellow mute students and our ambtions to help them and other people like them by providing them a platform which helps them to communicate with other people and share their ideas and thoughts by using Sign Language thus helping us in our mission to make world more accessible through our skills as Developers.
