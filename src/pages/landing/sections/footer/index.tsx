@@ -18,7 +18,7 @@ export default function FooterSection() {
                         <FaInstagram className='text-[#fff] hover:text-yellow'></FaInstagram>
                     </a>
                 </div>
-                <p className='text-[#fff] font-light text-sm mt-1'>© 2021 SignTalk. All rights reserved.</p>
+                <p className='text-[#fff] font-light text-sm mt-1'>© 2025  SignTalk. All rights reserved.</p>
             </div>
         </section>
     )
